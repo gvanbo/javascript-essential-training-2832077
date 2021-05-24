@@ -7,6 +7,7 @@
  * - Test the method by sending new values and checking the properties in the console.
  */
 
+// eslint-disable-next-line no-unused-vars
 const backpack = {
   name: "Everyday Backpack",
   volume: 30,
@@ -16,11 +17,25 @@ const backpack = {
     left: 26,
     right: 26,
   },
+
   toggleLid: function (lidStatus) {
     this.lidOpen = lidStatus;
   },
+
   newStrapLength: function (lengthLeft, lengthRight) {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
+  },
+
+  newName: function (text) {
+    this.name = text;
+  },
+
+  newVolume: function (amount) {
+    this.volume = amount;
+  },
+
+  numPockets: function (num) {
+    this.pocketNum = num;
   },
 };
